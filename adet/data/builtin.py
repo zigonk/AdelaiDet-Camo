@@ -10,6 +10,9 @@ from .datasets.text import register_text_instances
 _PREDEFINED_SPLITS_PIC = {
     "pic_person_train": ("pic/image/train", "pic/annotations/train_person.json"),
     "pic_person_val": ("pic/image/val", "pic/annotations/val_person.json"),
+    # Register camov1 dataset
+    "camo_train_v1": ("Images", "Annotations/camo_train.json"),
+    "camo_val_v1": ("Images", "Annotations/camo_val.json"),
 }
 
 metadata_pic = {
