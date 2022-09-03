@@ -15,8 +15,16 @@ _PREDEFINED_SPLITS_PIC = {
     "camo_val_v1": ("Images", "Annotations/camo_val.json"),
 }
 
-metadata_pic = {
-    "thing_classes": ["person"]
+metadata = {
+    "pic": {
+        "thing_classes": ["person"]
+    },
+    "camo_train_v1": {
+        "thing_classes": ["camouflage"]
+    },
+    "camo_val_v1": {
+        "thing_classes": ["camouflage"]
+    }
 }
 
 _PREDEFINED_SPLITS_TEXT = {
@@ -48,7 +56,7 @@ def register_all_coco(root="datasets"):
         # Assume pre-defined datasets live in `./datasets`.
         register_coco_instances(
             key,
-            metadata_pic,
+            metadata[key],
             os.path.join(root, json_file) if "://" not in json_file else json_file,
             os.path.join(root, image_root),
         )
