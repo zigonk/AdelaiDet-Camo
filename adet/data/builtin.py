@@ -20,10 +20,10 @@ metadata = {
         "thing_classes": ["person"]
     },
     "camo_train_v1": {
-        "thing_classes": ["camourflage", "noncamourflage"]
+        "thing_classes": ["camourflage"]
     },
     "camo_val_v1": {
-        "thing_classes": ["camourflage", "noncamourflage"]
+        "thing_classes": ["camourflage"]
     }
 }
 
